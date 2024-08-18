@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #313132;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+nav h1 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.771);
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: rgba(255, 255, 255, 0.771);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: white;
+  font-size: 18px;
+}
+
+/* Card Styles */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 90%; /* Make the card take most of the width on small screens */
+  max-width: 400px; /* Limit the card width on larger screens */
+  justify-content: center;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+              0 0  0 2px rgb(190, 190, 190),
+              0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.userimg {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+.profile-details {
+  text-align: center;
+}
+
+.profile-name,
+.profile-email,
+.profile-mobile {
+  padding-left: 10px; 
+  margin: 5px 0;
+}
+
+.skills-list, .profile-skill, .profile-mobile, .profile-email {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  text-align: left;
+  width: 100%;
+}
+
+.skills-list li, .profile-skill, .profile-mobile, .profile-email {
+  margin: 5px 0;
+  padding-left: 10px; 
+}
+
+/* Container Styles */
+.container2 {
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px auto; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.reviews-box {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.review-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.review-item h4 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.review-item p {
+  margin: 5px 0;
+}
+
+.review-input-box {
+  width: 90%;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.review-input-inner-box {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #6d6d6d;
+}
+
+.review-input-inner-box h5 {
+  margin-bottom: 15px;
+}
+
+.review-input-inner-box input[type="number"] {
+  margin-bottom: 10px;
+  width: 100%; /* Full width for mobile */
+  padding: 5px;
+}
+
+.review-input-inner-box input[type="submit"] {
+  margin-top: 10px;
+  width: auto;
+  padding: 5px 10px;
+  text-align: left;
+  display: block; 
+}
+
+/* Heading Styles */
+.heading-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin: 3px;
+  color: rgb(81, 81, 209);
+}
+
+.heading-text {
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .card {
+      width: 45%; /* Adjust the width for medium screens */
+  }
+
+  .review-input-inner-box input[type="number"] {
+      width: 50%; /* Reduce width for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+      width: 30%; /* Adjust the width for larger screens */
+  }
+
+  .review-input-inner-box input[type="number"] {
+      width: 30%; /* Reduce width for larger screens */
+  }
+}

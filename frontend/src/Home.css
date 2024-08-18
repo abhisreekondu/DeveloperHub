@@ -1,0 +1,31 @@
+
+  /* Center the section content */
+ 
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay background */
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .landing-inner {
+    text-align: center;
+    color: white;
+  }
+  
+  .buttons a {
+    margin-right: 10px;
+  }
+x-large{
+  color:white;
+
+}
+
+
+  
+  .buttons a:last-child {
+    margin-right: 0;
+  }
+  

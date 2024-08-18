@@ -1,0 +1,207 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #313132;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+nav h1 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.771);
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: rgba(255, 255, 255, 0.771);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: white;
+  font-size: 18px;
+}
+
+/* Profile Card */
+.card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 30%;
+  justify-content: center;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+              0 0 0 2px rgb(190, 190, 190),
+              0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 2%;
+}
+
+.userimg {
+  width: 120px;
+  height: 120px;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.profile-details {
+  text-align: center;
+}
+
+.profile-name,
+.profile-email,
+.profile-mobile {
+  padding-left: 10px;
+  margin: 5px 0;
+}
+
+.skills-list,
+.profile-skill,
+.profile-mobile,
+.profile-email {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  text-align: left;
+  width: 100%;
+}
+
+.skills-list li,
+.profile-skill,
+.profile-mobile,
+.profile-email {
+  margin: 5px 0;
+  padding-left: 10px;
+}
+
+/* Reviews Section */
+.container1 {
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.reviews-box1 {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.review-item1 {
+  margin-bottom: 15px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.review-item1 h4 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.review-item1 p {
+  margin: 5px 0;
+}
+
+.tick {
+  color: green;
+}
+
+.container1 h3 {
+  color: rgb(71, 71, 250);
+}
+
+.review-item1 p {
+  color: rgb(71, 71, 250);
+}
+
+.heading1 {
+  display: flex;
+  align-items: center;
+}
+
+.icon1 {
+  margin: 3px;
+  color: rgb(81, 81, 209);
+}
+
+.heading-text {
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .card1 {
+    width: 50%;
+  }
+  
+  .container1 {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card1 {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav h1 {
+    font-size: 18px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .card1 {
+    width: 90%;
+  }
+
+  .userimg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-name,
+  .profile-email,
+  .profile-mobile {
+    font-size: 14px;
+  }
+
+  .review-item1 h4 {
+    font-size: 1em;
+  }
+}
